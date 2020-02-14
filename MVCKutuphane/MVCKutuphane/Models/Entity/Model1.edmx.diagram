@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="32d882110d7242e4953ba46de8bb5a31" Name="Diagram1">
+        <EntityTypeShape EntityType="KutuphaneDbModel.Cezalar" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Hareket" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Kasa" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Kategori" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Kitap" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Personel" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Uyeler" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Yazar" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Cezalar_Hareket" ManuallyRouted="false" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Cezalar_Uyeler" ManuallyRouted="false" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Hareket_Kitap" ManuallyRouted="false" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Hareket_Uyeler" ManuallyRouted="false" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Kitap_Kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Kitap_Yazar" ManuallyRouted="false" />
+        <AssociationConnector Association="KutuphaneDbModel.FK_Hareket_Personel" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.Hakkimizda" Width="1.5" PointX="8.375" PointY="7.75" />
+        <EntityTypeShape EntityType="KutuphaneDbModel.İletisim" Width="1.5" PointX="0.75" PointY="9.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

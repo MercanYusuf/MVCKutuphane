@@ -1,0 +1,25 @@
+﻿@model MVCKutuphane.Models.Entity.Personel
+    @{
+        ViewBag.Title = "PersonelGetir";
+        Layout = "~/Views/Shared/Layout.cshtml";
+    }
+
+
+    @using (Html.BeginForm("PersonelGuncelle", "Personel", FormMethod.Post))
+    {
+        <div style="margin-bottom: 15px"></div>
+        <div class="form-group">
+            <label>Personel Id</label>
+            @*@Html.LabelFor(i=>i.Id)*@
+            @Html.TextBoxFor(i => i.Id, new { @class = "form-control" })
+            <br />
+            @*@Html.LabelFor(i=>i.Ad)*@
+            <label>Personel Adı</label>
+            @Html.TextBoxFor(i => i.Personel1, new { @class = "form-control" })
+            @Html.ValidationMessageFor(i=>i.Personel1,"",new{ @style="color:red"})
+
+        </div>
+        <div>
+            <button class="btn btn-warning">Güncelle</button>
+        </div>
+    }

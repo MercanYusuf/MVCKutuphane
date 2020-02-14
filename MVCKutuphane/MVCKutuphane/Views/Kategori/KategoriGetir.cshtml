@@ -1,0 +1,24 @@
+﻿@model MVCKutuphane.Models.Entity.Kategori
+@{
+    ViewBag.Title = "KategoriGetir";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("KategoriGuncelle", "Kategori", FormMethod.Post))
+{
+    <div style="margin-bottom: 15px"></div>
+    <div class="form-group">
+        <label>Kategori Id</label>
+        @*@Html.LabelFor(i=>i.Id)*@
+        @Html.TextBoxFor(i => i.Id, new { @class = "form-control" })
+        <br />
+        @*@Html.LabelFor(i=>i.Ad)*@
+        <label>Kategori Adı</label>
+        @Html.TextBoxFor(i => i.Ad, new { @class = "form-control" })
+
+    </div>
+    <div>
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+}
